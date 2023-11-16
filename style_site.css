@@ -1,0 +1,1069 @@
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 10%;
+    max-width: 90%;
+}
+
+.highcharts-credits{
+    display: none;
+  }
+
+#container {
+    height: 800px;
+    padding-left: 10%;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 300;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: white;
+}
+
+.highcharts-data-table tr:hover {
+    background: white;
+}
+
+
+
+body,
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white; 
+  margin: 0 auto;
+}
+section {
+    background-color: white;
+    position: relative;
+	min-width: 100%;
+	min-height : 100%;
+}
+
+
+
+H1{
+    font-family: 'Good Times Rg', sans-serif;
+    font-style: italic;
+    line-height : 2vw;
+    margin: 4vw 0 2vw;
+    margin-left : 10%;
+    margin-right : 10%;
+    font-size: 1.8vw;
+    text-align: center;
+    color : black;
+  }
+
+  
+  .head{
+    background: url("contenu/Ariere_plan.JPG");
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+  }
+
+  section.chart{
+    margin-top: 200px;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  nav.menu{
+    color:#1E2D56;
+    display: flex;
+    list-style: none;
+    width: 98%;
+    justify-content: space-between;
+    margin-bottom:50px;
+    margin-top: 50px;
+    margin-left: 1%;
+  }
+
+  li a{
+  text-decoration: none;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: background-color 0.5s;
+  }
+  li:hover {
+    -ms-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  
+    color:#66B2FF;
+  }
+  
+
+  
+  .subtitle{
+    color : black;
+    font-size: 50px;
+    position : relative;
+  }
+
+  .subtitle::before {
+    content: "";
+    position: absolute;
+    background-color:  #1E2D56;
+    width: 70px;
+    height: 7px;
+    bottom: 0;
+  }
+
+  .subsubtitle{
+    color : black;
+    font-size: 40px;
+    margin-top: 80px;
+    position : relative;
+  }
+  .subsubtitle::before {
+    content: "";
+    position: absolute;
+    background-color: #66B2FF;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+  }
+
+
+  .school{
+    min-height: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .lycee{
+    background-image: url("contenu/lycee-carquefou-nantes3.jpg");
+    max-width: 800px;
+    min-height: 500px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
+  }
+  .lycee:hover {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .prepa{
+    background-image: url("contenu/csm_campus_savoie_technolac_polytech_2f350e5dc0.jpg");
+    max-width: 800px;
+    min-height: 500px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
+  }
+  .prepa:hover {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .inge{
+    background-image: url("contenu/polytech 2.png");
+    max-width: 800px;
+    min-height: 500px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
+  }
+  .inge:hover {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .detail{
+    background-color: #66B2FFaa;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+    transition: background-color 0.5s;
+    
+  }
+  .detail:hover {
+    background-color:#66B2FFfa;
+  }
+
+
+  .detail1{
+    background-color: #88CC88aa;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+    transition: background-color 0.5s;
+    
+  }
+  .detail1:hover {
+    background-color:#88CC88fa;
+  }
+
+  .name{
+    font-size: large;
+    font-weight: 1000;
+    color:#1E2D56;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .learn{
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-weight: 600;
+    color:#333333;
+    padding-bottom: 2px;
+  }
+
+  .exper{
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .IMGG{
+
+    height: 250px;
+    bottom: 0px;
+    margin-top: 0 auto;
+  }
+  .Exp1{
+    position: absolute;
+    background-color: #66B2FF;
+    bottom: 0%;
+    left: 260px;
+    width: 1643px;
+    height: 100%;
+    -webkit-transition: background-color 3s; 
+    -moz-transition: background-color 3s; 
+    transition: background-color 3s; 
+  }
+  
+  .Exp1:hover {
+    background-color: transparent; 
+  }
+
+  .Exp2{
+    position: absolute;
+    background-color:#88CC88;
+    bottom: 0%;
+    left: 260px;
+    width: 1643px;
+    height: 100%;
+    -webkit-transition: background-color 3s; 
+    -moz-transition: background-color 3s; 
+    transition: background-color 3s; 
+  }
+  .Exp2:hover{
+    background-color: transparent; 
+  }
+
+
+
+
+
+  .backPolyenco{
+    position: absolute;
+    background-image: url("contenu/IMG_0422.png");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+  .backTeacher{
+    position: absolute;
+    background-image: url("contenu/backprof.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+  .backCafe{
+    position: absolute;
+    background-image: url("contenu/le-cafe-du-port.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+  .backGranem{
+    position: absolute;
+    background-image: url("contenu/d1.JPG");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+  .backLaris{
+    position: absolute;
+    background-image: url("contenu/demeo-oculus-quest-game-review-4-1155x770.webp");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+
+  .backLS2N{
+    position: absolute;
+    background-image: url("contenu/CAD.JPG");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+
+  .backIUT{
+    position: absolute;
+    background-image: url("contenu/Courbe-experimentale-resultante-de-nos-essais-de-traction.png");
+    background-size: cover;
+    background-position: center;
+    top: 0%;
+    left: 1072px;
+    width: 831px;
+    height: 100%;
+  }
+
+
+
+  .proj{
+    color : #1E2D56;
+    font-size: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 80px;
+    position : relative;
+  }
+  .proj::before {
+    content: "";
+    position: absolute;
+    background-color: #88CC88;
+    width: 50px;
+    height: 5px;
+    bottom: 0;
+      -webkit-transition: transform 0.2s;
+      -moz-transition: transform 0.2s;
+    transition: background-color 0.2s;
+    
+  }
+  .proj:hover::before {
+    background-color:#333333;
+  }
+
+  .nameSup{
+    font-size:25px;
+    color:#1E2D56;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 5%;
+    position : relative;
+  }
+  .nameSup::before {
+    content: "";
+    position: absolute;
+    background-color: #88CC88;
+    width: 5%;
+    height: 5px;
+    bottom: 0px;
+  }
+
+  /*Projects*/
+  /*Granem*/
+  .Granem1{
+    background-image: url("contenu/Granem1.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem2{
+    background-image: url("contenu/Granem2.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem3{
+    background-image: url("contenu/Granem3.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem4{
+    background-image: url("contenu/Granem4.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem5{
+    background-image: url("contenu/Granem5.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem6{
+    background-image: url("contenu/Granem6.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .Granem7{
+    background-image: url("contenu/Granem7.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+  /*LARIS*/
+  .LARIS1{
+    background-image: url("contenu/LARIS1.jpg");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .LARIS2{
+    background-image: url("contenu/LARIS2.png");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .LARIS3{
+    background-image: url("contenu/LARIS3.PNG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .LARIS4{
+    background-image: url("contenu/LARIS4.jpg");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  .LARIS5{
+    background-image: url("contenu/LARIS5.JPG");
+    max-width: 1200px;
+    min-height: 400px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+  }
+
+  /*LS2N*/
+  .LS2N1{
+  background-image: url("contenu/LS2N1.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N2{
+  background-image: url("contenu/LS2N2.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N3{
+  background-image: url("contenu/LS2N3.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+
+.LS2N4{
+  background-image: url("contenu/LS2N4.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N5{
+  background-image: url("contenu/CAD.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N6{
+  background-image: url("contenu/LS2N6.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N7{
+  background-image: url("contenu/LS2N7.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.LS2N8{
+  background-image: url("contenu/LS2N8.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+/*Neural Network*/
+.Neural1{
+  background-image: url("contenu/Neural1.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Neural2{
+  background-image: url("contenu/Neural2.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Neural3{
+  background-image: url("contenu/Neural3.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Neural4{
+  background-image: url("contenu/Neural4.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Neural5{
+  background-image: url("contenu/Neural5.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Neural6{
+  background-image: url("contenu/Neural6.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+/*Chamb2A*/
+.Chamb2A1{
+  background-image: url("contenu/Chamb2A1.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb2A2{
+  background-image: url("contenu/Chamb2A2.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb2A3{
+  background-image: url("contenu/Chamb2A3.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb2A4{
+  background-image: url("contenu/Chamb2A4.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb2A5{
+  background-image: url("contenu/Chamb2A5.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb2A6{
+  background-image: url("contenu/Chamb2A6.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb1A1{
+  background-image: url("contenu/Chamb1A1.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb1A2{
+  background-image: url("contenu/Chamb1A2.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb1A3{
+  background-image: url("contenu/Chamb1A3.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Chamb1A4{
+  background-image: url("contenu/Chamb1A4.JPG");
+  max-width: 1200px;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Inventor{
+  background-image: url("contenu/Inventor.jpg");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa1{
+  background-image: url("contenu/Equa1.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa2{
+  background-image: url("contenu/Equa2.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa3{
+  background-image: url("contenu/Equa3.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa4{
+  background-image: url("contenu/Equa4.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa5{
+  background-image: url("contenu/Equa5.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa6{
+  background-image: url("contenu/Equa6.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+.Equa7{
+  background-image: url("contenu/Equa7.JPG");
+  max-width: 100%;
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.end{
+  margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+  .Scroll{
+    color : black;
+    padding-left: 50px;
+    font-size: large;
+    font-weight: 1000;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: transform 0.5s;
+
+  }
+  .Scroll:hover {
+    color:brown;
+  }

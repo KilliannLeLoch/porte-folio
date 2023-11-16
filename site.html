@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_site.css">
+    <title>Killiann Le Loch</title>
+</head>
+
+	
+<script src="Highcharts-10.3.3/code/highcharts.js"></script>
+<script src="Highcharts-10.3.3/code/modules/exporting.js"></script>
+<script src="Highcharts-10.3.3/code/modules/export-data.js"></script>
+<script src="Highcharts-10.3.3/code/modules/accessibility.js"></script>
+<script src="Highcharts-10.3.3/code/modules/sankey.js"></script>
+<script src="Highcharts-10.3.3/code/modules/sankey.js"></script>
+
+<body>
+    <a name="Start"></a>
+
+    <section class="head">
+
+    </section>
+
+
+    <section class="flex">
+
+        <nav class="menu">
+            <li><a href="#Education"> Education</a></li>
+            <li><a href="#Experiences"> Professional experiences </a></li>
+            <li><a href="#Projects">Projects</a></li>
+        </nav> 
+    </section>
+ 
+    <a name="Education"></a>
+    <section class="Education">
+        <h2 class="subtitle">Education</h2>
+    
+    <div class ="school">
+        <a class="lycee">
+            <div class="detail">
+                <p class="name">
+                    Lycée de Carquefou
+                </p>
+                <p class="learn">
+                    Bac S- Engineering science
+                </p>
+            </div>
+        </a>
+
+        <a class="prepa">
+            <div class="detail">
+                <p class="name">
+                    Polytech Savoie Mont-Blanc
+                </p>
+                <p class="learn">
+                    Preparation class to Engineering school
+                </p>
+            </div>
+        </a>
+
+        <a class="inge">
+            <div class="detail">
+                <p class="name">
+                    Polytech Lyon
+                </p>
+                <p class="learn">
+                    Applied mathematics and modeling engineer class
+                </p>
+            </div>
+        </a>
+    </div>
+
+    </section>
+
+
+
+    <section class="chart">
+
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+    
+        </figure>
+        
+        
+                <script type="text/javascript">
+        Highcharts.chart('container', {
+        
+            title: {
+                text: "What I've learn"
+            },
+    
+        
+
+        accessibility: {
+        point: {
+            valueDescriptionFormat: '{index}. {point.from} to {point.to}, {point.weight}.'
+        }
+    },
+    series: [{
+        keys: ['from', 'to', 'weight'],
+        data: [
+                    ['Database', 'Python', 1],
+                    ['Database', 'R', 1],
+                    ['Database', 'SAS', 1],
+                    ['Database', 'SQL', 1], 
+
+                    ['statistics', 'R', 1],
+                    ['statistics', 'SAS', 1],
+
+                    ['Algorithm theory', 'Python', 1],
+                    ['Algorithm theory', 'Arduino', 1],
+                    ['Algorithm theory', 'Matlab', 1],
+                    ['Algorithm theory', 'C/C++', 1],
+
+                    ['Numerical analysis', 'Matlab', 1],
+                    ['Numerical analysis', 'C/C++', 1],
+    
+                    ['Optimisation', 'Matlab', 1],
+                    ['Optimisation', 'C/C++', 1],
+
+                    ['Computational Physics', 'Arduino', 1],
+                    ['Computational Physics', 'Matlab', 1],
+                    ['Computational Physics', 'C/C++', 1],
+
+                    ['Software engineering', 'C/C++', 1],
+                    ['Software engineering', 'Unix', 1],
+                    
+                    ['CAD theory', 'Matlab', 1],
+                    ['CAD theory', '3D Experience', 1],
+                    ['CAD theory', 'Inventor', 1],
+    
+                    
+    
+        ],
+        type: 'sankey',
+        name: 'Sankey demo series'
+    }]
+
+});
+                </script>
+    
+    </section>
+
+    <a name="Experiences"></a>
+    <section class="Experiences">
+
+        <h2 class="subtitle">Professional experiences</h2>
+
+        <h2 class="subsubtitle">Internships</h2>
+
+        <div class="exper">    
+            <img src="contenu/Chaire-appro.png" class="IMGG">
+
+            <div class="backGranem">
+                    
+            </div>
+            <div class="Exp1">
+                <p class="name">
+                    Granem (2023)
+                </p>
+
+                <p class="learn">
+                    Data Science and Statistical Testing on Eye-tracking VR Helmet Experience 
+                    <br>
+                    using Python for data management and R for testing
+                </p>
+
+                <br>
+
+                <a href="#Granem" class="learn">
+                    If you wanna know more
+                </a>
+                
+            </div>
+
+
+        </div>
+
+        <div class="exper">    
+            <img src="contenu/LarisLogo.jpg" class="IMGG">
+
+            <div class="backLaris">
+                    
+            </div>
+            <div class="Exp2">
+                <p class="name">
+                    Laris (2023)
+                </p>
+
+                <p class="learn">
+                    Transferring control from a virtual robot interface operated via the keyboard 
+                <br>
+
+                
+                    to an in-game controller through the utilization of hand-tracking technology 
+                
+                <br>
+                
+                    using Unity environment.
+                </p>
+
+                <br>
+  
+                <a href="#Laris" class="learn">
+                    If you wanna know more
+                </a>
+                
+            </div>
+
+
+        </div>    
+
+        <div class="exper">    
+            <img src="contenu/sigle-ls2n-bleu-fonce.jpeg" class="IMGG">
+
+            <div class="backLS2N">
+                    
+            </div>
+            <div class="Exp1">
+                <p class="name">
+                    LS2N (2021)
+                </p>
+
+                <p class="learn">
+                    Characterization tests of modular Hebi motors in Python and modeled a 3D model 
+                    <br>
+                    in 3D Experience. Additionally, consider employing CAD modeling prior to 3D 
+                    <br>
+                    printing to minimize material wastage.
+                </p>
+
+                <br>
+  
+                <a href="#LS2N" class="learn">
+                    If you wanna know more
+                </a>
+                
+            </div>
+
+
+        </div>    
+
+        <div class="exper">    
+            <img src="contenu/Logo_IUT_Nantes.png" class="IMGG">
+
+            <div class="backIUT">
+                    
+            </div>
+            <div class="Exp2">
+                <p class="name">
+                    IUT Nantes (2018)
+                </p>
+
+                <p class="learn">
+                    Characterization tests of additive manufacturing materials
+                </p>
+
+    
+                
+            </div>
+
+
+        </div> 
+
+        <h2 class="subsubtitle">Other</h2>
+
+        
+
+        <div class="exper">    
+            <img src="contenu/logo-couleur-avec-titre-noir.png" class="IMGG">
+
+            <div class="backPolyenco">
+                    
+            </div>
+            <div class="Exp1">
+                <p class="name">
+                    Polyenco (2022-)
+                </p>
+
+                <p class="learn">
+                    Study follow-up and responsible in Quality Management in this Junior entreprise
+                </p>
+
+                <br>
+
+                <a href="https://junior-polyenco.fr/" class="learn">
+                    If you wanna know more
+                </a>
+                
+            </div>
+        </div>
+
+
+        <div class="exper">    
+            <img src="contenu/calculatrice.png" class="IMGG">
+
+            <div class="backTeacher">
+                    
+            </div>
+            <div class="Exp2">
+                <p class="name">
+                    Science teacher (2020-)
+                </p>
+
+                <p class="learn">
+                    Tutor in maths and physics
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="exper">    
+            <img src="contenu/caféDu Port.jpg"  class="IMGG">
+
+            <div class="backCafe">
+                    
+            </div>
+            <div class="Exp1">
+                <p class="name">
+                    Polyvalent employe in restauration (2022-2023)
+                </p>
+
+                <p class="learn">
+                    In "le café du port" at Sainte Marine and a fast food at Aix les Bains
+                </p>
+
+                
+                
+            </div>
+
+
+        </div>
+
+        
+
+    </section>
+
+
+    <a name="Projects"></a>
+    <section class="Projects">
+
+        <h2 class="subtitle">Projects</h2>
+
+        <section class="flex">
+
+            <nav class="menu">
+                <li><a href="#Internships projects">Internships projects</a></li>
+                <li> <a href="#University projects">University projects</a></li>
+                <li><a href="#Own projects">Own projects</a></li>
+            </nav> 
+        </section>
+
+        <a name="Internships projects"></a>
+        <section class="subsubtitle">Internships projects</section>
+        
+            <section class="flex">
+
+                <nav class="menu">
+                    <li><a href="#Granem">Granem</a></li>
+                    <li><a href="#Laris">Laris</a></li>
+                    <li><a href="#LS2N">LS2N</a></li>
+                </nav> 
+            </section>
+
+            <a name="Granem"></a>
+            <h2 class="proj">Granem</h2>
+                <p class="nameSup">
+                    Testing :
+                </p>
+            
+                    <div class ="school">
+                        <a class="Granem1">
+                            <div class="detail">
+                                <p class="name">
+                                    Use of VR environement
+                                </p>
+                                <p class="learn">
+                                    For comercial purpose by replicating a customer's environment
+                                </p>
+                            </div>
+                        </a>
+
+                        <a class="Granem2">
+                            <div class="detail">
+                                <p class="name">
+                                    Survey inputs and choices with real products
+                                </p>
+                                <p class="learn">
+                                    Incorporating eye-tracking technology
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <p class="nameSup">
+                        Codes :
+                    </p>
+                
+                        <div class ="school">
+                            <a class="Granem3">
+                                <div class="detail">
+                                    <p class="name">
+                                        Employ the Panda library
+                                    </p>
+                                    <p class="learn">
+                                        For data analysis
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="Granem4">
+                                <div class="detail">
+                                    <p class="name">
+                                        Use R
+                                    </p>
+                                    <p class="learn">
+                                        For statistical testing
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    <p class="nameSup">
+                        Results :
+                    </p>
+                
+                        <div class ="school">
+                            <a class="Granem5">
+                                <div class="detail">
+                                    <p class="name">
+                                        Test of a sign
+                                    </p>
+                                    <p class="learn">
+                                        Test for assessing the impact on customer choices
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="Granem6">
+                                <div class="detail">
+                                    <p class="name">
+                                        Strong result
+                                    </p>
+                                    <p class="learn">
+                                        We observed a substantial difference between the groups exposed to the sign and those not exposed
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a class="Granem7">
+                                <div class="detail">
+                                    <p class="name">
+                                        Explore the connection between the components of the sign and the products
+                                    </p>
+                                    <p class="learn">
+                                        Based on the time spent observing each part
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+            <a name="Laris"></a>
+            <h2 class="proj">Laris</h2>
+
+                <p class="nameSup">
+                    Design :
+                </p>
+            
+                    <div class ="school">
+                        <a class="LARIS1">
+                            <div class="detail1">
+                                <p class="name">
+                                    Design for VR environement
+                                </p>
+                                <p class="learn">
+                                    Tailored to the Meta Quest 2
+                                </p>
+                            </div>
+                        </a>
+        
+                        <a class="LARIS2">
+                            <div class="detail1">
+                                <p class="name">
+                                    Buttons, functioning with hand-tracking
+                                </p>
+                                <p class="learn">
+                                    Should provide an easy-to-use experience, giving users the sensation of a push-up and release
+                                </p>
+                            </div>
+                        </a>
+                        <a class="LARIS3">
+                            <div class="detail1">
+                                <p class="name">
+                                    Position of the buttons
+                                </p>
+                                <p class="learn">
+                                    Should be ergonomic and user-friendly
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <p class="nameSup">
+                    Technique :
+                </p>
+
+                <div class ="school">
+                    <a class="LARIS4">
+                        <div class="detail1">
+                            <p class="name">
+                                Code in C# using the 'XR Toolkit' library
+                            </p>
+                            <p class="learn">
+                                To facilitate interactions between components in Unity
+                            </p>
+                        </div>
+                    </a>
+    
+                    <a class="LARIS5">
+                        <div class="detail1">
+                            <p class="name">
+                                Integration of differential equations
+                            </p>
+                            <p class="learn">
+                                To emulate the natural movement of the robot
+                            </p>
+                        </div>
+                    </a>
+                    
+                </div>
+
+            </div>
+
+            <a name="LS2N"></a>
+            <h2 class="proj">LS2N</h2>
+                <p class="nameSup">
+                    Project start :
+                </p>
+            
+                    <div class ="school">
+                        <a class="LS2N1">
+                            <div class="detail">
+                                <p class="name">
+                                    Hebby modular motors
+                                </p>
+                                <p class="learn">
+                                    The project aimed to assess the efficiency of the motor's sensors.
+                                </p>
+                            </div>
+                        </a>
+        
+                        <a class="LS2N2">
+                            <div class="detail">
+                                <p class="name">
+                                    Arm robot system
+                                </p>
+                                <p class="learn">
+                                    Harm system which simulate a real condition of a 3D home printer
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p class="nameSup">
+                        Modelisation :
+                    </p>
+                
+                        <div class ="school">
+                            <a class="LS2N3">
+                                <div class="detail">
+                                    <p class="name">
+                                        Complete 3D modeling using 3D Experience
+                                    </p>
+                                    <p class="learn">
+                                        This will allow us to visualize how all the pieces will be interconnected
+                                    </p>
+                                </div>
+                            </a>
+                
+                            <a class="LS2N4">
+                                <div class="detail">
+                                    <p class="name">
+                                        Mathematical modeling of error
+                                    </p>
+                                    <p class="learn">
+                                        To visualize the theoretical results arising from material flexibility and motor precision
+                                    </p>                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class ="school">
+                            <a class="LS2N5">
+                                <div class="detail">
+                                    <p class="name">
+                                        Solidity simulation
+                                    </p>
+                                    <p class="learn">
+                                        Prior to printing, we need to ensure the system won't fail and make necessary adjustments to components if required.
+                                    </p>                                    
+                                </div>
+                            </a>
+
+                            <a class="LS2N6">
+                                <div class="detail">
+                                    <p class="name">
+                                        Cura modeling
+                                    </p>
+                                    <p class="learn">
+                                        To maximize printing efficiency and minimize plastic waste.
+                                    </p>                                    
+                                </div>
+                            </a>
+        
+                        </div>
+                        
+                        <p class="nameSup">
+                            Fabrication :
+                        </p>
+
+                        <div class ="school">
+                            <a class="LS2N7">
+                                <div class="detail">
+                                    <p class="name">
+                                        Code in Python
+                                    </p>
+                                    <p class="learn">
+                                        Implement a robot with a position vector and a method for moving from one point to another
+                                    </p>                                    
+                                </div>
+                            </a>
+
+                            <a class="LS2N8">
+                                <div class="detail">
+                                    <p class="name">
+                                        Fabrication of the final robot
+                                    </p>
+                                    <p class="learn">
+                                        Creating a 4m long arm for motor testing
+                                    </p>                                    
+                                </div>
+                            </a>
+        
+                        </div>
+            
+
+        <a name="University projects"></a>
+        <section class="subsubtitle">University projects</section>
+
+            <section class="flex">
+
+                <nav class="menu">
+                    <li><a href="#Lyon">Neural Network</a></li>
+                    <li><a href="#Chamb2A">Physical characterization of the frictions of a pinball</a></li>
+                    <li><a href="#Chamb1A">Composite materials and use in the automobile sector</a></li>
+                    <li><a href="#Carquefou">Polar table with CAD modeling</a></li>
+                </nav> 
+            </section>
+
+            <a name="Lyon"></a>
+            <h2 class="proj">Neural Network</h2>
+
+            <p class="nameSup">
+                Mathematical theory :
+            </p>
+
+            <div class ="school">
+                <a class="Neural1">
+                    <div class="detail1">
+                        <p class="name">
+                            Representation of a Neural Network
+                        </p>
+                        <p class="learn">
+                            To visualize the mathematical operations involved
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Neural2">
+                    <div class="detail1">
+                        <p class="name">
+                            Method to backtrack to the root of the data mathematically
+                        </p>
+                        <p class="learn">
+                            For solving the optimisation system.
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Neural3">
+                    <div class="detail1">
+                        <p class="name">
+                            Solving of the optimisation system
+                        </p>
+                        <p class="learn">
+                            To minimize errors with training data
+                        </p>                                    
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="nameSup">
+                Code :
+            </p>
+
+            <div class ="school">
+                <a class="Neural4">
+                    <div class="detail1">
+                        <p class="name">
+                            Class representation
+                        </p>
+                        <p class="learn">
+                            To prepare the code effectively
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Neural5">
+                    <div class="detail1">
+                        <p class="name">
+                            Code for all the necessary methods
+                        </p>
+                        <p class="learn">
+                            For solving the system in C++
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Neural6">
+                    <div class="detail1">
+                        <p class="name">
+                            Solving the neural network
+                        </p>
+                        <p class="learn">
+                            Successfully tested on the 'Iris' database
+                        </p>                                    
+                    </div>
+                </a>
+
+            </div>
+
+
+
+            <a name="Chamb2A"></a>
+            <h2 class="proj">Physical characterization of the frictions of a pinball</h2>
+
+            <p class="nameSup">
+                Before-project: 
+            </p>
+
+            <div class ="school">
+                <a class="Chamb2A1">
+                    <div class="detail">
+                        <p class="name">
+                            Schematisation
+                        </p>
+                        <p class="learn">
+                            Aiding in visualization
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Chamb2A2">
+                    <div class="detail">
+                        <p class="name">
+                            Mathematical modeling
+                        </p>
+                        <p class="learn">
+                            To comprehend the results of experiments
+                        </p>                                    
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="nameSup">
+                Experiments: 
+            </p>
+
+            <div class ="school">
+                <a class="Chamb2A3">
+                    <div class="detail">
+                        <p class="name">
+                            Schematisation for 2D wood printing
+                        </p>
+                        <p class="learn">
+                            Enabling complete customization
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Chamb2A4">
+                    <div class="detail">
+                        <p class="name">
+                            Assembly
+                        </p>
+                        <p class="learn">
+                            Adhering to a strict budget
+                        </p>                                    
+                    </div>
+                </a>
+
+            </div>
+
+
+            <p class="nameSup">
+                Results : 
+            </p>
+
+            <div class ="school">
+                <a class="Chamb2A5">
+                    <div class="detail">
+                        <p class="name">
+                            Interpolations of constants with several materials
+                        </p>
+                        <p class="learn">
+                            Primarily focusing on friction constants
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Chamb2A6">
+                    <div class="detail">
+                        <p class="name">
+                            Final fonction
+                        </p>
+                        <p class="learn">
+                            Where: l0 is the initial elonging of the flipper 
+                            <br>
+                            alpha is the angle of the flipper
+                            <br>
+                            theta l is a limit angle. Ball will go too far after this point
+                            <br>
+                            lambda l is a constant to determine. which depend of the ball's mass and ressort's characteristics
+                            <br>
+                            x f is the extreme distance the ball reaches
+                        </p>                                    
+                    </div>
+                </a>
+
+            </div>
+
+            <a name="Chamb1A"></a>
+            <h2 class="proj">Composite materials and use in the automobile sector</h2>
+
+            <p class="nameSup">
+                Researche of exemple : 
+            </p>
+
+            <div class ="school">
+                <a class="Chamb1A1">
+                    <div class="detail1">
+                        <p class="name">
+                            A car made in lin fiber
+                        </p>
+                        <p class="learn">
+                            Porsche Mission R
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Chamb1A2">
+                    <div class="detail1">
+                        <p class="name">
+                            Assembly
+                        </p>
+                        <p class="learn">
+                            With servial strats
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+            <p class="nameSup">
+                Proprieties of fibers : 
+            </p>
+
+            <div class ="school">
+                <a class="Chamb1A3">
+                    <div class="detail1">
+                        <p class="name">
+                            Production
+                        </p>
+                        <p class="learn">
+                            Lin fiber is produced in the north of France
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Chamb1A4">
+                    <div class="detail1">
+                        <p class="name">
+                            Comparaison of fibers
+                        </p>
+                        <p class="learn">
+                            Synthetic fibers exhibit superior performance
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+
+            <a name="Carquefou"></a>
+            <h2 class="proj">Polar table with CAD modeling</h2>
+
+            <div class ="school">
+                <a href="https://www.youtube.com/watch?v=cqxBY8yEAlE" class="Inventor">
+                    <div class="detail1">
+                        <p class="name">
+                            Modelling with inventor
+                        </p>
+                        <p class="learn">
+                            Video available if you want to watch
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+
+        <a name="Own projects"></a>
+        <section class="subsubtitle">Own projects</section>
+
+            <section class="flex">
+
+                <nav class="menu">
+                    <li><a href="#diff">Researches on differential equations</a></li>
+                </nav> 
+            </section>
+
+
+            <a name="diff"></a>
+            <h2 class="proj">Researches on differential equations</h2>
+            <p class="nameSup">
+                Moddeled a way to find differential equations  : 
+            </p>
+
+            <div class ="school">
+                <a class="Equa1">
+                    <div class="detail">
+                        <p class="name">
+                            The equation I found
+                        </p>
+                        <p class="learn">
+                            using Euleur method and Taylor approximations
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Equa2">
+                    <div class="detail">
+                        <p class="name">
+                            Turn into Matrix
+                        </p>
+                        <p class="learn">
+                            For coding it
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Equa3">
+                    <div class="detail">
+                        <p class="name">
+                            Moddeling of error
+                        </p>
+                        <p class="learn">
+                            Aiding through the classes we had on Taylor approximations
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+            <p class="nameSup">
+                Testing in code  : 
+            </p>
+
+            <div class ="school">
+                <a class="Equa5">
+                    <div class="detail">
+                        <p class="name">
+                            In C and Matlab
+                        </p>
+                        <p class="learn">
+                            Using exemples
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Equa4">
+                    <div class="detail">
+                        <p class="name">
+                            Plot them
+                        </p>
+                        <p class="learn">
+                            y"(x) = ln|y(x) - y'(x)|
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+            <p class="nameSup">
+                Presentation  : 
+            </p>
+
+            <div class ="school">
+                <a class="Equa6">
+                    <div class="detail">
+                        <p class="name">
+                            With other exemples
+                        </p>
+                        <p class="learn">
+                            For everybody to understand
+                        </p>                                    
+                    </div>
+                </a>
+
+                <a class="Equa7">
+                    <div class="detail">
+                        <p class="name">
+                            Latex presentation
+                        </p>
+                        <p class="learn">
+                            Exercising myself to use advanced LaTeX features
+                        </p>                                    
+                    </div>
+                </a>
+            </div>
+
+
+    </section>
+
+
+<section class = "end">
+    <a class="Scroll" href="#Start">
+        Go up
+    </a>
+</section>
+ 
+
+</body>
+</html>
