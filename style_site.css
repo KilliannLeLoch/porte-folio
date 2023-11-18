@@ -136,7 +136,8 @@ H1{
   
   .subtitle{
     color : black;
-    font-size: 500px;
+    font-size: 50px;
+    margin-top: 500px;
     position : relative;
   }
 
