@@ -108,7 +108,7 @@ H1{
     transition: background-color 0.5s;
   }
   .flex:hover{
-    color:#d3e9ff; 
+    background-color:#e2f1ff;  
   }
 
   nav.menu{
@@ -127,7 +127,7 @@ H1{
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
   transition: transform 0.5s;
-  transition: background-color 0.5s;
+  transition: color 0.5s;
   }
   li:hover {
     -ms-transform: scale(1.3);
