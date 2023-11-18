@@ -13,6 +13,7 @@
 <script src="JS/modules/export-data.js"></script>
 <script src="JS/accessibility.js"></script>
 <script src="JS/sankey.js"></script>
+<script src="JS/variable-pie.js"></script>
 
 <body>
     <a name="Start"></a>
@@ -459,6 +460,117 @@
                                 </div>
                             </a>
                         </div>
+
+	    <figure class="highcharts-figure">
+                            <div id="container1"></div>
+                            <p class="highcharts-description">
+
+                            </p>
+                        </figure>
+                        
+                        
+                        
+                    
+                        <script type="text/javascript">
+                        // Data retrieved from https://worldpopulationreview.com/country-rankings/countries-by-density
+                        Highcharts.chart('container1', {
+                            chart: {
+                                type: 'variablepie'
+                            },
+                            title: {
+                                text: "Customer's average choice with the WWF sign",
+                                align: 'left'
+                            },
+                            tooltip: {
+                                headerFormat: '',
+                                pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+                                    'Perctage of customers: <b>{point.y}</b><br/>%'
+                            },
+                            series: [{
+                                minPointSize: 10,
+                                innerSize: '20%',
+                                zMin: 0,
+                                name: 'number of vegetable product by cart of 4 items',
+                                data: [{
+                                    name: '0',
+                                    y: 9,
+                                    z: 9
+                                },{
+                                    name: '1',
+                                    y: 17,
+                                    z: 17
+                                }, {
+                                    name: '2',
+                                    y: 39,
+                                    z: 39
+                                }, {
+                                    name: '3',
+                                    y: 29,
+                                    z: 29
+                                }, {
+                                    name: '4',
+                                    y: 6,
+                                    z: 6
+                                }]
+                            }]
+                        });
+                        
+                                </script>
+
+            <figure class="highcharts-figure">
+                <div id="container2"></div>
+                <p class="highcharts-description"> Number of vegetable product taken by cart of 4 items
+                </p>
+            </figure>
+
+
+
+
+            <script type="text/javascript">
+            // Data retrieved from https://worldpopulationreview.com/country-rankings/countries-by-density
+            Highcharts.chart('container2', {
+                chart: {
+                    type: 'variablepie'
+                },
+                title: {
+                    text: "Customer's average choice without the WWF sign",
+                    align: 'left'
+                },
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+                        'Perctage of customers: <b>{point.y}</b><br/>%'
+                },
+                series: [{
+                    minPointSize: 10,
+                    innerSize: '20%',
+                    zMin: 0,
+                    name: 'number of vegetable product by cart of 4 items',
+                    data: [{
+                        name: '0',
+                        y: 6,
+                        z: 6
+                    },{
+                        name: '1',
+                        y: 39,
+                        z: 39
+                    }, {
+                        name: '2',
+                        y: 40,
+                        z: 40
+                    }, {
+                        name: '3',
+                        y: 15,
+                        z: 15
+                    }, {
+                        name: '4',
+                        y: 0.4,
+                        z: 0.4
+                    }]
+                }]
+            });
+
+        </script>
 
             <a name="Laris"></a>
             <h2 class="proj">Laris</h2>
