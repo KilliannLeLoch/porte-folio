@@ -132,7 +132,10 @@ H1{
     color:#66B2FF;
   }
   
-
+li a:hover {
+  
+    color:#66B2FF;
+  }
   
   .subtitle{
     color : black;
@@ -153,7 +156,7 @@ H1{
   .subsubtitle{
     color : black;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 500px;
     position : relative;
   }
   .subsubtitle::before {
