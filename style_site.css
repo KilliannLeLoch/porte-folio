@@ -140,7 +140,7 @@ H1{
   
 
   
-  .subtitle{
+  .sube{
     color : black;
     font-size: 50px;
     margin-top: 500px;
@@ -159,7 +159,7 @@ H1{
   .subsubtitle{
     color : black;
     font-size: 40px;
-    margin-top: 500px;
+    margin-top: 50px;
     position : relative;
   }
   .subsubtitle::before {
