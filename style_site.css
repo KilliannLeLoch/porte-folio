@@ -100,15 +100,8 @@ H1{
 
   .flex{
     display: flex;
-    background-color:whitesmoke;
     height: 80px;
     align-items: center;
-      -webkit-transition: transform 0.5s;
-      -moz-transition: transform 0.5s;
-    transition: background-color 0.5s;
-  }
-  .flex:hover{
-    background-color:#e2f1ff;  
   }
 
   nav.menu{
