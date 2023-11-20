@@ -321,7 +321,7 @@ li a:hover {
   }
   
   .Exp1:hover {
-    width: 30%;
+    width: 20%;
   }
 
   .Exp2{
@@ -337,7 +337,7 @@ li a:hover {
   }
   
   .Exp2:hover {
-    width: 30%;
+    width: 20%;
   }
 
 
@@ -346,60 +346,55 @@ li a:hover {
   .backPolyenco{
     position: absolute;
     background-image: url("contenu/IMG_0422.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
   .backTeacher{
     position: absolute;
     background-image: url("contenu/backprof.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
   .backCafe{
     position: absolute;
     background-image: url("contenu/le-cafe-du-port.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
   .backGranem{
     position: absolute;
     background-image: url("contenu/d1.JPG");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
   .backLaris{
     position: absolute;
     background-image: url("contenu/demeo-oculus-quest-game-review-4-1155x770.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
@@ -407,12 +402,11 @@ li a:hover {
   .backLS2N{
     position: absolute;
     background-image: url("contenu/CAD.JPG");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
@@ -420,12 +414,11 @@ li a:hover {
   .backIUT{
     position: absolute;
     background-image: url("contenu/Courbe-experimentale-resultante-de-nos-essais-de-traction.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     top: 0%;
-    left: 30%;
-    width: 70%;
+    right: 0%;
+    width: 60%;
     height: 100%;
   }
 
