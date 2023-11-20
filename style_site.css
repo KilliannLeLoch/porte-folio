@@ -91,7 +91,7 @@ H1{
   .head{
     background: url("contenu/Ariere_plan.JPG");
     background-size: cover;
-    height: 800px;
+    height: 100%;
     background-position: center;
   }
 
