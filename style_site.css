@@ -89,12 +89,46 @@ H1{
 
   
   .head{
-    background: url("contenu/Ariere_plan.JPG");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #eaafc8;
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
     height: 600px;
-    width: 100%;
-    background-position: center;
+    box-align: center;
+    display: flex;
+    vertical-align: middle;
+    font-size: 4vw;
+    flex-direction: column;
+
+    -webkit-transition: box-shadow 10s;
+    -moz-transition: box-shadow 10s;
+  transition: box-shadow 10s;
+
+  }
+  .head:hover{
+    box-shadow: 0px 600px 300px -200px #b0b1fd inset; 
+  }
+
+  .Name{
+    margin:auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  }
+  .Name:hover{
+    color:wheat;
+  }
+
+  .Work{
+    margin:auto;
+    font-size: 3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  }
+  .Work:hover{
+    color:wheat;
   }
 
   section.chart{
