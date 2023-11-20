@@ -90,8 +90,10 @@ H1{
   
   .head{
     background: url("contenu/Ariere_plan.JPG");
-    background-size: cover;
-    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
     background-position: center;
   }
 
@@ -103,7 +105,16 @@ H1{
     display: flex;
     height: 80px;
     align-items: center;
+    background-color:whitesmoke;
+      
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: background-color 0.5s;
   }
+  .flex:hover{
+    background-color:antiquewhite;
+  }
+
 
   nav.menu{
     color:#1E2D56;
@@ -114,10 +125,16 @@ H1{
     margin-bottom:50px;
     margin-top: 50px;
     margin-left: 1%;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+  transition: color 0.5s;
   }
+
 
   li a{
   text-decoration: none;
+  color:#66B2FF;
+  
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
   transition: transform 0.5s;
@@ -129,12 +146,12 @@ H1{
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   
-    color:#66B2FF;
+    color:blue;
   }
   
 li a:hover {
   
-    color:#66B2FF;
+  color:blue;
   }
   
   .subtitle{
@@ -287,8 +304,7 @@ li a:hover {
   }
 
   .IMGG{
-
-    height: 20%;
+    width: 20%;
     bottom: 0px;
     margin-top: 0 auto;
   }
@@ -297,17 +313,15 @@ li a:hover {
     background-color: #66B2FF;
     bottom: 0%;
     left: 20%;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    -webkit-transition: background-color 3s; 
-    -moz-transition: background-color 3s; 
-    transition: background-color 3s; 
-    transition: transform 3s; 
+    -webkit-transition: width 3s;
+    -moz-transition: width 3s;
+  transition: width 3s;
   }
   
   .Exp1:hover {
-    background-color: transparent; 
-    height: 0%;
+    width: 30%;
   }
 
   .Exp2{
@@ -315,17 +329,15 @@ li a:hover {
     background-color:#88CC88;
     bottom: 0%;
     left: 20%;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    -webkit-transition: background-color 3s; 
-    -moz-transition: background-color 3s; 
-    transition: background-color 3s; 
-    transition: transform 3s; 
+    -webkit-transition: width 3s;
+    -moz-transition: width 3s;
+  transition: width 3s;
   }
   
   .Exp2:hover {
-    background-color: transparent; 
-    height: 0%;
+    width: 30%;
   }
 
 
@@ -334,7 +346,8 @@ li a:hover {
   .backPolyenco{
     position: absolute;
     background-image: url("contenu/IMG_0422.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -345,7 +358,8 @@ li a:hover {
   .backTeacher{
     position: absolute;
     background-image: url("contenu/backprof.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -356,7 +370,8 @@ li a:hover {
   .backCafe{
     position: absolute;
     background-image: url("contenu/le-cafe-du-port.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -367,7 +382,8 @@ li a:hover {
   .backGranem{
     position: absolute;
     background-image: url("contenu/d1.JPG");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -378,7 +394,8 @@ li a:hover {
   .backLaris{
     position: absolute;
     background-image: url("contenu/demeo-oculus-quest-game-review-4-1155x770.webp");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -390,7 +407,8 @@ li a:hover {
   .backLS2N{
     position: absolute;
     background-image: url("contenu/CAD.JPG");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
@@ -402,7 +420,8 @@ li a:hover {
   .backIUT{
     position: absolute;
     background-image: url("contenu/Courbe-experimentale-resultante-de-nos-essais-de-traction.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     top: 0%;
     left: 30%;
