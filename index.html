@@ -681,6 +681,92 @@
                         </a>
                     </div>
 
+	    	<figure class="highcharts-figure">
+                <div id="container3"></div>
+                <p class="highcharts-description">
+                    We can modulate the growth factor to change the motion of the robot
+                </p>
+            </figure>
+            
+            
+            
+            
+            
+                    <script type="text/javascript">
+            Highcharts.chart('container3', {
+            
+                title: {
+                    text: 'Diffrent factor of growth of the differential equation',
+                    align: 'left'
+                },
+            
+                subtitle: {
+                },
+            
+                yAxis: {
+                    title: {
+                        text: 'Speed'
+                    }
+                },
+            
+                xAxis: {
+                    accessibility: {
+                        rangeDescription: 'Range: 0 to 10'
+                    }
+                },
+            
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+            
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        pointStart: 0
+                    }
+                },
+            
+                series: [{
+                    name: 'factor = 0.1',
+                    data: [0,0.1,0.18,0.26,0.33,0.39,0.45,0.5,0.55,0.59,0.63]
+                }, {
+                    name: 'factor = 0.2',
+                    data: [0,0.18,0.33,0.45,0.55,0.63,0.7,0.75,0.8,0.83,0.86]
+                }, {
+                    name: 'factor = 0.3',
+                    data: [0,0.26,0.45,0.59,0.7,0.78,0.83,0.88,0.91,0.93,0.95]
+                }, {
+                    name: 'factor = 0.5',
+                    data: [0,0.39,0.63,0.78,0.86,0.92,0.95,0.97,0.98,0.99,0.99]
+                }, {
+                    name: 'factor = 0.8',
+                    data: [0,0.55,0.8,0.91,0.96,0.98,0.99,1,1,1,1]
+                }],
+            
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+            
+            });
+            
+                    </script>
+	    
+
                     <p class="nameSup">
                         Modelisation :
                     </p>
